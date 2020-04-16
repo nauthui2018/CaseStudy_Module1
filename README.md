@@ -1,2 +1,2 @@
-# Module-1-_-Case-Study
+# Module1-CaseStudy
 The first website
