@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html>
+<title>T&J Handmade Leather &mdash; Welcome </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/home.css">
+
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="../pics/logo small.jpg" width="210px" height="180px" alt="Image">
+  </div>
+  <div class="w3-large w3-text-grey" style="font-weight:bold">
+    <a href="javascript:;" class="w3-bar-item w3-button">Belt</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Bracalet</a>
+    <a onclick="myAccFunc()" href="javascript:;" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Watchstrap <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-padding-large w3-medium">
+      <a href="javascript:;" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Barenia Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Bundstrap</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Calfskin Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Cow Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Curved endlink</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Genuine Alligator Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Lizard Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Ostrich Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Reverso style</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Shark</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Shell Cordovan Leather</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Stingray</a>
+      <a href="javascript:;" class="w3-bar-item w3-button">Suede Leather</a>
+    </div>
+    <a href="javascript:;" class="w3-bar-item w3-button">Jackets</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Gymwear</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Blazers</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Shoes</a>
+  </div>
+  <div class="w3-padding-64">
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:;" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#subcribe"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <!-- <div class="w3-hide-large" style="margin-top:83px"></div> -->
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge" id="page-top">
+    <a href="javascript:;" class="w3-bar-item w3-button w3-padding-24 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <p><a class="w3-left" href="home.html" style="text-decoration: darkgrey;">T&J Handmade Leather</a></p>
+    <a class="w3-right w3-btn fa fa-user" href="../login/login.html" style="font-size: medium;"> Login</a>
+    <a class="w3-right w3-btn fa fa-search" href="javascript:;" style="font-size: medium;"> </a>
+    <a class="w3-right" style="font-size: small;"><input class="w3-input" type="text" placeholder="Search"></a>
+
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="../pics/cover.jpg" alt="Image" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New Products</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New Products</h1>
+      <h1 class="w3-hide-small">Great Deals</h1>
+      <p><a href="javascript:;" class="w3-button w3-blue-grey w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <!-- Product grid -->
+ 
+  <div class="w3-row w3-grayscale w3-margin-top" id="showProducts">
+
+  </div>
+ 
+
+  <!-- About us -->
+  <div class="row w3-display-container w3-container w3-light-grey">
+    <div class="w3-col s6">
+      <p class="w3-large" style="font-weight:bold">ABOUT US</p>
+      <div class="w3-margin-top w3-margin-right w3-margin-bottom w3-margin-left w3-scrollText" style="font-size: small; height: 40vh;">
+      
+        Since 2016, I saw a clip to make watchstrap and immediately
+        fallen in love with this field. After that, I learnt how to 
+        make the watchstrap and some small leather products.... 
+        Steps by steps....and up to present, I am making great items
+        for you and for me. <br>
+        For materials, I try to find out high quality leather source 
+        from famous and trust leather supplier in the world
+        (AMTAN and PAN company in US for high and best quality 
+        alligator skin; Henglong in Singapore - I just use leathers
+        from these companies for my Alligator watch strap, wallet 
+        and credit card holder... ; Zermatt , Alran leather,
+        Mando paint, Fil au Chinois thread from France).<br>
+        I believe that when you place an order, you will 
+        receive a luxury, duration and fashionable product from me! <br>
+        For services, it is very important. You order one from me, 
+        you should receive a comfortable and satisfied services 
+        besides products. I promise that I will always stay behind 
+        my customers and your product will be in lifetime services 
+        from me - I think simple that: Try to best!!! 
+        Customer is friend!!! <br>
+        Making with passion! Creating value for life! 
+        That is T&J Handmade Leather purpose!
+      
+      </div>
+    
+    </div>
+    <div class="w3-col s6"style="margin-top:20px">
+      <img src="../pics/cover1.jpg" alt="Image" style="width:100%">
+    </div>
+
+  </div>
+
+  <!-- Subcribe -->
+  <div class="w3-padding-16 w3-display-container w3-container w3-light-grey" id="subcribe">
+    <img src="../pics/cover2.jpg" alt="Image" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Subscribe</h1>
+      <p>To get special offers and VIP treatment:</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+      <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-16 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-building"></i> T&J Handmade Leather Cooperation</p>
+        <p><i class="fa fa-fw fa-map-marker"></i> Văn Cao street, Huế City, Việt Nam</p>
+        <p><i class="fa fa-fw fa-phone"></i> (+84) 911 735 939</p>
+        <p><i class="fa fa-fw fa-envelope"></i> handmadeleather@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.handmadeleather.com" title="T&J Handmade Leather" target="_blank" class="w3-hover-opacity">T&J Handmade Leather</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top w3-btn-scroll" href="#page-top" id="scrollBtn">
+  <i class="w3-xxlarge fa fa-angle-up"></i>
+</a>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script src="../libs/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/node_modules/bootbox/dist/bootbox.min.js"></script>
+<script src="../libs/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

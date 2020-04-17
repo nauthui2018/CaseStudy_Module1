@@ -1,0 +1,291 @@
+{
+  "products": [
+    {
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic02.jpg",
+      "price": "400,000",
+      "inventory": "150 pcs",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic03.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 4,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic04.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/product3.jpeg",
+      "price": "300,000",
+      "inventory": "In stock",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic06.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 7,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic07.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 8,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic08.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic01.jpg",
+      "price": "300,000",
+      "inventory": "In stock: 120pcs",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic02.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 3,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic03.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 4,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic04.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 5,
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic05.jpg",
+      "price": "300,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 6,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic06.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 7,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic07.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 8,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic08.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic01.jpg",
+      "price": "300,000",
+      "inventory": "In stock: 120pcs",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic02.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 3,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic03.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 4,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic04.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 5,
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic05.jpg",
+      "price": "300,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 6,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic06.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 7,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic07.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 8,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic08.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic01.jpg",
+      "price": "300,000",
+      "inventory": "In stock: 120pcs",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic02.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 3,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic03.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 4,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic04.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 5,
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic05.jpg",
+      "price": "300,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 6,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic06.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 7,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic07.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 8,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic08.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black",
+      "image": "pics/pic01.jpg",
+      "price": "300,000",
+      "inventory": "In stock: 120pcs",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Money clip",
+      "description": "Black",
+      "image": "pics/pic02.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "id": 3,
+      "name": "Card wallet",
+      "description": "Blue",
+      "image": "pics/pic03.jpg",
+      "price": "400,000",
+      "inventory": "In stock"
+    },
+    {
+      "name": "Apple watchstrap",
+      "description": "Black 20mm",
+      "image": "pics/pic01.jpg",
+      "price": "250",
+      "inventory": "1000",
+      "id": 30
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "Nauthui7@gmail.com",
+      "password": "Nauthui7&more"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html>
+<title>T&J Handmade Leather &mdash; Welcome </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/home.css">
+
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top:250px w3-text-grey w3-light-grey" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <a class="w3-display w3-hover-opacity" href="dashboard.html"><h2 class="w3-left">My Site</h2></a>
+  </div>
+  <div class="w3-large" style="font-weight:bold">
+    <a href="javascript:;" class="w3-bar-item w3-button">Dashboard</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Store Products</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Store Orders</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Customer Managerment</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Analytics</a>
+    <a href="javascript:;" class="w3-bar-item w3-button">Setting</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <!-- <div class="w3-hide-large" style="margin-top:83px"></div> -->
+  
+  <!-- Top header -->
+  <header class="w3-container w3-large w3-blue-grey ml-2" id="page-top">
+    <a href="javascript:;" class="w3-bar-item w3-button w3-padding-16 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <p><a class="w3-left mt-3" href="dashboard.html" style="text-decoration: darkgrey;">T&J Handmade Leather</a></p>
+    <a class="w3-right w3-btn fa fa-user w3-padding-8" href="home.html" style="font-size: medium;"> Logout</a>
+    
+
+  </header>
+  <!-- Page Wrapper -->
+
+  <header class="w3-container w3-large ml-2">
+    <a class="w3-right w3-btn w3-teal w3-round-large mt-3" href="javascript:;" style="font-size: small;" onclick="dashboard.openModal()">+ New Products</a>
+    <a class="w3-right w3-btn w3-teal w3-round-large fa fa-search mr-2 mt-3" href="javascript:;"></a>
+    <a class="w3-right mt-3" style="font-size: small;"><input class="w3-input" type="text" placeholder="Search"></a>
+  </header>
+
+  <!-- Product grid -->
+  <table class="table table-bordered table-hover mt-3 ml-2" id="tbProducts" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Inventory</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <!-- The Modal -->
+  <div class="modal" id="addEditModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Create New Product</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form id="formAddEditProduct">
+            <input type="text" id="productId" name="productId" hidden value="0">
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="">Product Name</label>
+              </div>
+              <div class="col-8">
+                <input type="text" class="form-control" name="name" id="name" data-rule-required ="true" data-msg-required="Product name is required">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="">Description</label>
+              </div>
+              <div class="col-8">
+                <textarea class="form-control" name="description" id="description" cols="30" rows="5">
+
+                </textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="">Product Image</label>
+              </div>
+              <div class="col-8">
+                <input type="text" name="image" class="form-control" id="image" data-rule-required="true" data-msg-required="Product image is required">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="">Price</label>
+              </div>
+              <div class="col-8">
+                <input type="text" class="form-control" name="price" id="price" data-rule-required ="true" data-msg-required="Product price is required">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="">Inventory</label>
+              </div>
+              <div class="col-8">
+                <input type="text" class="form-control" name="inventory" id="inventory" data-rule-required ="true" data-msg-required="Please check product in stock!">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="javascript:;" class="btn btn-success" id="btnProduct" onclick="dashboard.save()">Save</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End of Main Content -->
+
+  <!-- Scroll to Top Button-->
+<a class="scroll-to-top w3-btn-scroll" href="#page-top" id="scrollBtn">
+  <i class="w3-xxlarge fa fa-angle-up"></i>
+</a>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p class="w3-medium w3-center">Powered by <a href="https://www.handmadeleather.com" title="T&J Handmade Leather" target="_blank" class="w3-hover-opacity">T&J Handmade Leather</a></p>
+  </footer>
+
+ <!-- Logout Modal-->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+       <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">×</span>
+       </button>
+     </div>
+     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+     <div class="modal-footer">
+       <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+       <a class="btn btn-primary" href="login.html">Logout</a>
+     </div>
+   </div>
+ </div>
+</div>
+
+  <!-- End page content -->
+</div>
+
+<script src="../libs/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../libs/node_modules/bootbox/dist/bootbox.min.js"></script>
+<script src="../libs/node_modules/jquery-validation/dist/jquery.validate.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
